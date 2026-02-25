@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = tt_um_lif.v lif.v
 
 ifneq ($(GATES),yes)
 
@@ -43,3 +43,5 @@ COCOTB_TEST_MODULES = test
 
 # include cocotb's make rules to take care of the simulator setup
 include $(shell cocotb-config --makefiles)/Makefile.sim
+COCOTB_TEST_MODULES = test
+MODULE ?= $(COCOTB_TEST_MODULES)
