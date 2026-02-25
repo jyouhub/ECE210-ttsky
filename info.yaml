@@ -1,8 +1,15 @@
 # Tiny Tapeout project information
 project:
+<<<<<<< HEAD
   title:        "ECE-110 Chip Design"      # Project title
   author:       "Jason You"      # Your name
   description:  "it simulates a lif neuron (ripped from the tutorial)"      # One line description of what your project does
+=======
+  title:        ""      # Project title
+  author:       ""      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  ""      # One line description of what your project does
+>>>>>>> 022705b51fa3fddb3286d5019d308a1080900d70
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -10,19 +17,28 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
+<<<<<<< HEAD
   top_module:  "tt_um_lif"
+=======
+  top_module:  "tt_um_example"
+>>>>>>> 022705b51fa3fddb3286d5019d308a1080900d70
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
+<<<<<<< HEAD
     - "tt_um_lif.v"
     - "lif.v"
+=======
+    - "project.v"
+>>>>>>> 022705b51fa3fddb3286d5019d308a1080900d70
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
+<<<<<<< HEAD
   ui[0]: "Input current bit [0]"
   ui[1]: "Input current bit [1]"
   ui[2]: "Input current bit [2]"
@@ -41,6 +57,26 @@ pinout:
   uo[5]: "State variable bit [5]"
   uo[6]: "State variable bit [6]"
   uo[7]: "State variable bit [7]"
+=======
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: ""
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+>>>>>>> 022705b51fa3fddb3286d5019d308a1080900d70
 
   # Bidirectional pins
   uio[0]: ""
@@ -50,7 +86,11 @@ pinout:
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
+<<<<<<< HEAD
   uio[7]: "Spike bit"
+=======
+  uio[7]: ""
+>>>>>>> 022705b51fa3fddb3286d5019d308a1080900d70
 
 # Do not change!
 yaml_version: 6
